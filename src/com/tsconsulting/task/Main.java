@@ -8,7 +8,7 @@ public class Main {
 
         try {
             int peopleCount = Integer.parseInt(args[0]);
-            Warehouse warehouse = new Warehouse(1000);
+            Warehouse warehouse = Warehouse.getInstance(1000);
             ExecutorService threadPool = Executors.newFixedThreadPool(peopleCount);
             Phaser phaser = new Phaser(peopleCount);
 
