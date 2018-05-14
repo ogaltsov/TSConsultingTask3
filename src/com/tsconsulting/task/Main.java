@@ -1,3 +1,5 @@
+package com.tsconsulting.task;
+
 import java.util.concurrent.*;
 
 public class Main {

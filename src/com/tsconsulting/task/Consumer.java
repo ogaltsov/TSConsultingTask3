@@ -1,3 +1,5 @@
+package com.tsconsulting.task;
+
 import java.util.concurrent.Phaser;
 
 public class Consumer implements Runnable{
@@ -19,6 +21,7 @@ public class Consumer implements Runnable{
         phaser.arriveAndAwaitAdvance();
         while(true){
         int buyCount = warehouse.sell((int)(1+Math.random()*9));
+
         if(buyCount!=0){
             numOfGoods += buyCount;
             numOfPurchases++;
