@@ -18,7 +18,7 @@ public class Main {
             threadPool.shutdown();
 
         } catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Не введен аргумент для запуска");
+            System.out.println("Не введен аргумент для запуска!");
         }
     }
 }
