@@ -20,11 +20,17 @@ public final class Warehouse {
         }
     }
 
-    public static synchronized Warehouse getInstance(int goodsNum){
+    public static synchronized Warehouse getInstance(){
         if(warehouse==null){
-            warehouse = new Warehouse(goodsNum);
+            warehouse = new Warehouse(1000);
             return warehouse;
         }
         else return warehouse;
+    }
+
+
+
+    public void fill(int goodsNum){
+        totalGoodsNum=goodsNum;
     }
 }
